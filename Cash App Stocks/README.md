@@ -51,3 +51,4 @@ Running with XCode 13.4.1 simulator or the real device (iOS 13+)
 * Unit Test is currently focused on mock service and data fetching. 
 * We can and more tests for ViewModel to verify its logic is correct.
 * Better error handling user experience. 
+* Pagnation/Pre-downloading  etc.
