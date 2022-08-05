@@ -4,6 +4,7 @@ Completed: 08/04/22
 
 ## Architectural 
 Coordinator + MVVM
+
 NetworkService(Request/Reponse) <=> DataProvider <=> Coordinator(ViewCotroller) <=> ViewModel <=> View
 
 ## Hireactur
