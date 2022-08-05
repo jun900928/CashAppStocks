@@ -11,7 +11,7 @@ NetworkService(Request/Reponse) <=> DataProvider <=> Coordinator(ViewCotroller) 
 ## Trade-offs 
 #### Why use Coordinator
 The coordinator pattern would be used to display different UI flows if this app were to be built out more.
-For now, it simply sets up the stocks list and only handles the error alerts. In a full app, using this pattern with different UI components would relay triggered enumerated actions back to the coordinator. The coordinator would be responsible for modifying the current UI flow or presenting new flows.  
+For now, it simply sets up the stocks list. In a full app, using this pattern with different UI components would relay triggered enumerated actions back to the coordinator. The coordinator would be responsible for modifying the current UI flow or presenting new flows.  
 
 #### Why use MVVM
 Each UI view has its corresponding ViewModel. 
@@ -19,7 +19,7 @@ We could reuse these views in the actual app and feed different ViewModels.
 ViewModel is easily to test cause there is no UI element involved
 ViewModel has the responsibility to update the display content.
 ViewModel must also get notified when UI changes to update its data correspondingly.
-In the demo, I didn't add any action (tap, select, etc.), 
+In the demo, I didn't add any action (tap, select, etc.) for flow change, 
 but we can add the action handlers (through delegate or closure) to ViewModels. 
 
 #### Why write the UI by code
