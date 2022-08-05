@@ -1,5 +1,6 @@
 ## Cash App Stocks (iOS)
-Candidate: Mingjun lei
+Candidate: Mingjun lei 
+
 Completed: 08/04/22
 
 ## Architectural 
