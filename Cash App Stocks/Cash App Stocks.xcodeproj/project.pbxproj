@@ -13,7 +13,7 @@
 		9C1A0C31289BCB3200B2E6F5 /* MockURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A0C30289BCB3200B2E6F5 /* MockURLResponse.swift */; };
 		9C1A0C33289BCDD500B2E6F5 /* MockRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A0C32289BCDD500B2E6F5 /* MockRequest.swift */; };
 		9C1A0C35289BDC4A00B2E6F5 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A0C34289BDC4A00B2E6F5 /* CoordinatorTests.swift */; };
-		9C1A0C37289BDF4D00B2E6F5 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A0C36289BDF4D00B2E6F5 /* UIAlertController.swift */; };
+		9C1A0C37289BDF4D00B2E6F5 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A0C36289BDF4D00B2E6F5 /* UIViewController.swift */; };
 		9C1A0C39289BE45D00B2E6F5 /* HListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A0C38289BE45D00B2E6F5 /* HListingView.swift */; };
 		9C1A0C3B289C5B3000B2E6F5 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A0C3A289C5B3000B2E6F5 /* NetworkError.swift */; };
 		9C1A0C3D289C649800B2E6F5 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A0C3C289C649800B2E6F5 /* HTTPStatusCode.swift */; };
@@ -29,6 +29,7 @@
 		9C7DA4F6289B155F00C9D431 /* StocksListViewControllerDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7DA4F5289B155F00C9D431 /* StocksListViewControllerDataProvider.swift */; };
 		9C7DA4F8289B174900C9D431 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7DA4F7289B174900C9D431 /* UIView.swift */; };
 		9C7DA4FA289B182500C9D431 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7DA4F9289B182500C9D431 /* CGFloat.swift */; };
+		9C879D29289CF3D70094E026 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C879D28289CF3D70094E026 /* ToastView.swift */; };
 		9CBB1810289B3BC900B42EF2 /* StocksListCollectionViewCellPlaceHolderString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB180F289B3BC900B42EF2 /* StocksListCollectionViewCellPlaceHolderString.swift */; };
 		9CBB1812289B422A00B42EF2 /* CalculateSelfHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB1811289B422A00B42EF2 /* CalculateSelfHeight.swift */; };
 		9CCA28AC289A762800AC854C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCA28AB289A762800AC854C /* AppDelegate.swift */; };
@@ -69,7 +70,7 @@
 		9C1A0C30289BCB3200B2E6F5 /* MockURLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLResponse.swift; sourceTree = "<group>"; };
 		9C1A0C32289BCDD500B2E6F5 /* MockRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequest.swift; sourceTree = "<group>"; };
 		9C1A0C34289BDC4A00B2E6F5 /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
-		9C1A0C36289BDF4D00B2E6F5 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		9C1A0C36289BDF4D00B2E6F5 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		9C1A0C38289BE45D00B2E6F5 /* HListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HListingView.swift; sourceTree = "<group>"; };
 		9C1A0C3A289C5B3000B2E6F5 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		9C1A0C3C289C649800B2E6F5 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		9C7DA4F5289B155F00C9D431 /* StocksListViewControllerDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksListViewControllerDataProvider.swift; sourceTree = "<group>"; };
 		9C7DA4F7289B174900C9D431 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		9C7DA4F9289B182500C9D431 /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		9C879D28289CF3D70094E026 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		9CBB180F289B3BC900B42EF2 /* StocksListCollectionViewCellPlaceHolderString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksListCollectionViewCellPlaceHolderString.swift; sourceTree = "<group>"; };
 		9CBB1811289B422A00B42EF2 /* CalculateSelfHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateSelfHeight.swift; sourceTree = "<group>"; };
 		9CCA28A8289A762800AC854C /* Cash App Stocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cash App Stocks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +146,7 @@
 		9C7DA4DF289AF37900C9D431 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				9C879D27289CF3B20094E026 /* View */,
 				9C7DA4EC289AF93600C9D431 /* Cell */,
 				9C7DA4F5289B155F00C9D431 /* StocksListViewControllerDataProvider.swift */,
 				9C7DA4E0289AF3A900C9D431 /* StocksListViewController.swift */,
@@ -183,6 +186,14 @@
 				9C1A0C38289BE45D00B2E6F5 /* HListingView.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		9C879D27289CF3B20094E026 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C879D28289CF3D70094E026 /* ToastView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		9CCA289F289A762700AC854C = {
@@ -267,7 +278,7 @@
 				9C7DA4F7289B174900C9D431 /* UIView.swift */,
 				9C7DA4F9289B182500C9D431 /* CGFloat.swift */,
 				9CBB1811289B422A00B42EF2 /* CalculateSelfHeight.swift */,
-				9C1A0C36289BDF4D00B2E6F5 /* UIAlertController.swift */,
+				9C1A0C36289BDF4D00B2E6F5 /* UIViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -415,9 +426,10 @@
 				9CBB1812289B422A00B42EF2 /* CalculateSelfHeight.swift in Sources */,
 				9C7DA4E4289AF3E700C9D431 /* DataProvider.swift in Sources */,
 				9C7DA4E1289AF3A900C9D431 /* StocksListViewController.swift in Sources */,
-				9C1A0C37289BDF4D00B2E6F5 /* UIAlertController.swift in Sources */,
+				9C1A0C37289BDF4D00B2E6F5 /* UIViewController.swift in Sources */,
 				9C7DA4F2289AF9D600C9D431 /* StocksListCollectionViewCellDataModel.swift in Sources */,
 				9C7DA4EA289AF88600C9D431 /* StocksListCollectionViewDelegateFlowLayout.swift in Sources */,
+				9C879D29289CF3D70094E026 /* ToastView.swift in Sources */,
 				9CCA28AC289A762800AC854C /* AppDelegate.swift in Sources */,
 				9C1A0C39289BE45D00B2E6F5 /* HListingView.swift in Sources */,
 				9CCA28E4289A792E00AC854C /* Request.swift in Sources */,

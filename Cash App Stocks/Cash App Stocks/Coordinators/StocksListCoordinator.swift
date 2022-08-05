@@ -26,9 +26,9 @@ class StocksListCoordinator: Coordinator {
     ///   - error: Error
     ///   - vc: the UIViewController that occutrs error
     func errorHandling(_ error: Error, on vc: UIViewController) {
-        let alert = UIAlertController.createAlert(error)
+        let errorMsg = (error as? NetworkError)?.localizedDescription ?? error.localizedDescription
         if navigationController.topViewController == vc {
-            vc.present(alert, animated: true)
+            vc.showToast(message: errorMsg)
         }
     }
 }

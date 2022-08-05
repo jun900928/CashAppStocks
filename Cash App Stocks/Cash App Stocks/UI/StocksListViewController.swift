@@ -12,6 +12,24 @@ class StocksListViewController: UIViewController {
     
     weak var coordinator: StocksListCoordinator?
     
+    lazy var retryButton: UIButton = {
+        let image = UIImage(named: "SomethingWrong")
+        var configuration = UIButton.Configuration.plain()
+        var container = AttributeContainer()
+        container.font = UIFont.boldSystemFont(ofSize: 20)
+        configuration.attributedTitle = AttributedString("Click To Try Again", attributes: container)
+        configuration.image = image
+        configuration.titleAlignment = .center
+        configuration.imagePlacement = .top
+        configuration.imagePadding = 10
+        
+        let button = UIButton.init(configuration: configuration)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.isHidden = true
+        button.addTarget(self, action: #selector(refreshData), for: .touchUpInside)
+        return button
+    }()
+    
     lazy var refresher: UIRefreshControl = {
         let refresher = UIRefreshControl()
         refresher.attributedTitle = NSAttributedString.init(string: "Loading")
@@ -63,6 +81,7 @@ class StocksListViewController: UIViewController {
         view.addSubview(collectionView)
         view.backgroundColor = .systemBackground
         setupCollection()
+        setRetryButton()
     }
     
     func setupCollection() {
@@ -70,6 +89,11 @@ class StocksListViewController: UIViewController {
         collectionView.dataSource = collectionViewDataSource
         collectionView.delegate = collectionViewDelegate
         collectionView.constrainToSuperviewLayoutMarginsGuide()
+    }
+    
+    func setRetryButton() {
+        view.addSubview(retryButton)
+        retryButton.constrainToLayoutMarginsGuide(edges: .centerY, .centerX)
     }
 }
 
@@ -84,8 +108,10 @@ extension StocksListViewController {
 // MARK: - UIRefreshControl
 extension StocksListViewController {
     @objc func refreshData(){
+        let generator = UIImpactFeedbackGenerator(style: .heavy)
+            generator.impactOccurred()
         beginRefreshing()
-        dataProvider.fetchData(NetworkRequest(.portfolio)) { [weak self] result in
+        dataProvider.fetchData(NetworkRequest(.portfolioMalformed)) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let response):
@@ -97,6 +123,7 @@ extension StocksListViewController {
                 self.coordinator?.errorHandling(error, on: self)
             }
             self.stopRefresher()
+            self.showRetryButtonIfNeed()
         }
     }
     
@@ -106,5 +133,13 @@ extension StocksListViewController {
     
     func beginRefreshing() {
         refresher.beginRefreshing()
+    }
+    
+    func showRetryButtonIfNeed() {
+        if !refresher.isRefreshing && dataProvider.stocksList.isEmpty {
+            retryButton.isHidden = false
+        } else {
+            retryButton.isHidden = true
+        }
     }
 }

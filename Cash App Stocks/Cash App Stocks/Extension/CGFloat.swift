@@ -14,4 +14,5 @@ extension CGFloat {
     public static var sepearateSpaceAfter: CGFloat { 5 }
     
     public static var titleFont: CGFloat { 16 }
+    public static var toastFont: CGFloat { 12 }
 }
