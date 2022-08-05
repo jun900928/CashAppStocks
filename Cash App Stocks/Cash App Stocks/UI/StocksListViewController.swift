@@ -111,7 +111,7 @@ extension StocksListViewController {
         let generator = UIImpactFeedbackGenerator(style: .heavy)
             generator.impactOccurred()
         beginRefreshing()
-        dataProvider.fetchData(NetworkRequest(.portfolioMalformed)) { [weak self] result in
+        dataProvider.fetchData(NetworkRequest(.portfolio)) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let response):
